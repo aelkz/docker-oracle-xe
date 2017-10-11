@@ -15,7 +15,7 @@ CMD /tmp/fake-swap.sh \
   && rm /tmp/fake-swap.sh
 
 # Install Oracle XE
-ADD rpm/oracle-xe-11.2.0-1.0.x86_64.rpm.tar.gz /tmp/
+ADD rpm/oracle-xe-11.2.0-1.0.x86_64.rpm /tmp/
 RUN yum localinstall -y /tmp/oracle-xe-11.2.0-1.0.x86_64.rpm; \
     rm -rf /tmp/oracle-xe-11.2.0-1.0.x86_64.rpm
 
