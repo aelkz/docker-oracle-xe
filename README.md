@@ -19,7 +19,7 @@ Let's assume that you are familar with Docker and building Docker images from [D
         oracle-xe-11.2.0-1.0.x86_64.rpm
 
 1. Place the tarball inside the `rpm` directory of this repo.
-1. Run `docker build -t "madhead/docker-oracle-xe" .` from the root directory of this repo.
+1. Run `docker build -t "ejlp12/docker-oracle-xe" .` from the root directory of this repo.
 1. You should get your image ready in a few minutes (apart from downloading base `centos:centos7` image).
 
 During the configuration of Oracle XE instance two files - `init.ora` and `initXETemp.ora` - are overridden with ones from `config` directory of this repo.
@@ -28,7 +28,7 @@ The only piece of magic in this image :).
 
 ## How to use
 
-Basically `docker run -p 8089:8080 -p 1521:1521 -d  madhead/docker-oracle-xe` will start new container and bind it's local ports `1521` and `8080` to host's `1521` and `8089` respectively.
+Basically `docker run -p 8089:8080 -p 1521:1521 -d  ejlp12/docker-oracle-xe` will start new container and bind it's local ports `1521` and `8080` to host's `1521` and `8089` respectively.
 Read [Docker documentation](http://docs.docker.com/userguide/usingdocker/) for details.
 
 Oracle Web Management Console (apex) will be available at [http://localhost:8089/apex](http://localhost:8089/apex).
