@@ -45,3 +45,11 @@ Connect to the database using the following details:
     sid: XE
     username: system
     password: oracle
+
+
+Login to container `docker exec -it <container_id> bash` then test using following command:
+
+```
+sqlplus -s system/oracle@localhost:1521/XE <<< "select 1 from dual;"
+```
+
