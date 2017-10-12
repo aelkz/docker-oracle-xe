@@ -1,6 +1,7 @@
 FROM centos:centos7
 
 MAINTAINER Siarhei Krukau <siarhei.krukau@gmail.com>
+MAINTAINER Ejlp <ejlp12@gmail.com>
 
 # Pre-requirements
 RUN mkdir -p /run/lock/subsys
